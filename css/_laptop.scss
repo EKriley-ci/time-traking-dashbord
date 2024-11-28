@@ -1,0 +1,58 @@
+@media  screen and (min-width:768px) {
+   body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        // min-height: 100px !important;
+        max-width: 800px;
+        max-height: 400px;
+        
+        grid-template-columns: 200px 1fr;
+
+        .personnCart {
+            .profil {
+                height: 100%;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-around;
+                .name {
+                    font-size: 1.5rem;
+                }
+                img{
+                    max-width: 70px;
+                    max-height: 70px;
+                    border-radius: 50%;
+                    border: 3px solid white;
+                }
+            }
+            .nav {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding: 1.4em;
+                gap: 1em;
+                button {
+                font-size: 1.1rem;
+
+                }
+            }
+        }
+        #traking {
+            grid-template-columns: repeat(3, 200px);
+            .main-content {
+                .stat-contenaire {
+                    .time-contenaire  {
+                        flex-direction: column;
+                        align-items: start;
+                    }
+                }
+            }
+            
+
+        }
+    }
+   }
+}

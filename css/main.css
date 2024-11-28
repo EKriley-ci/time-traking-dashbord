@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+body main {
+  max-width: 300px;
+  width: 80%;
+  display: grid;
+  gap: 1.5em;
+  padding: 2em 1em;
+}
+body main .personnCart {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1em;
+}
+body main .personnCart .profil {
+  display: flex;
+  background-color: hsl(246, 80%, 60%);
+  align-items: center;
+  justify-content: center;
+  padding: 1.2em 1em;
+  gap: 10px;
+  border-radius: 1em;
+}
+body main .personnCart .profil img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+body main .personnCart .profil .name p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+body main .personnCart .profil .name h2 {
+  font-weight: lighter;
+}
+body main .personnCart .nav {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .personnCart .nav button {
+  background: none;
+  border: none;
+  color: white;
+  opacity: 0.6;
+  transition: 0.2s ease;
+}
+body main .personnCart .nav button:focus, body main .personnCart .nav button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+body main #traking {
+  display: grid;
+  gap: 1.5em;
+}
+body main #traking .main-content {
+  padding-top: 2em;
+  border-radius: 1em;
+}
+body main #traking .main-content .stat-contenaire {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1em;
+  padding: 1em;
+}
+body main #traking .main-content .stat-contenaire .title-contenaire {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main #traking .main-content .stat-contenaire .title-contenaire h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+body main #traking .main-content .stat-contenaire .time-contenaire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+body main #traking .main-content .stat-contenaire .time-contenaire p {
+  align-self: flex-start;
+}
+body main #traking .main-content .stat-contenaire .time-contenaire h2 {
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+body main #traking .main-content:first-child {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 70px;
+}
+body main #traking .main-content:nth-child(2) {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 70px;
+}
+body main #traking .main-content:nth-child(3) {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 70px;
+}
+body main #traking .main-content:nth-child(4) {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 70px;
+}
+body main #traking .main-content:nth-child(5) {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 70px;
+}
+body main #traking .main-content:last-child {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  body main {
+    max-width: 800px;
+    max-height: 400px;
+    grid-template-columns: 200px 1fr;
+  }
+  body main .personnCart .profil {
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+  }
+  body main .personnCart .profil .name {
+    font-size: 1.5rem;
+  }
+  body main .personnCart .profil img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  body main .personnCart .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1.4em;
+    gap: 1em;
+  }
+  body main .personnCart .nav button {
+    font-size: 1.1rem;
+  }
+  body main #traking {
+    grid-template-columns: repeat(3, 200px);
+  }
+  body main #traking .main-content .stat-contenaire .time-contenaire {
+    flex-direction: column;
+    align-items: start;
+  }
+}/*# sourceMappingURL=main.css.map */
